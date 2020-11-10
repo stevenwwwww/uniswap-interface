@@ -102,11 +102,12 @@ export default function Pool() {
   )
 
   const v2Pairs = usePairs(liquidityTokensWithBalances.map(({ tokens }) => tokens))
+  console.log("v2Pairs===============>",v2Pairs)
   const v2IsLoading =
     fetchingV2PairBalances || v2Pairs?.length < liquidityTokensWithBalances.length || v2Pairs?.some(V2Pair => !V2Pair)
 
   const allV2PairsWithLiquidity = v2Pairs.map(([, pair]) => pair).filter((v2Pair): v2Pair is Pair => Boolean(v2Pair))
-
+console.log("allV2PairsWithLiquidity===============>",allV2PairsWithLiquidity)
   const hasV1Liquidity = useUserHasLiquidityInAllTokens()
 
   // show liquidity even if its deposited in rewards contract

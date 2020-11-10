@@ -1,4 +1,4 @@
-import { transparentize } from 'polished'
+// import { transparentize } from 'polished'
 import React, { useMemo } from 'react'
 import styled, {
   ThemeProvider as StyledComponentsThemeProvider,
@@ -223,12 +223,72 @@ html {
 
 body {
   min-height: 100vh;
-  background-position: 0 -30vh;
   background-repeat: no-repeat;
-  background-image: ${({ theme }) =>
-    `radial-gradient(50% 50% at 50% 50%, ${transparentize(0.9, theme.primary1)} 0%, ${transparentize(
-      1,
-      theme.bg1
-    )} 100%)`};
+  background-image: radial-gradient(50% 50% at 50% 50%,#120f39 0%,#130519 100%);
+}
+.fltkUW{
+  background:#2A0946 !important
+}
+.mhgfk {
+  border-radius: 20px;
+  border: 1px solid #2C2F36;
+  background-color: #260940 !important;
+}
+.deMLGG {
+  background-color: #260940 !important;
+}
+.iNRcfz{
+  background-color: #1A0D26 !important;
+}
+.glzcFl{
+  background-color: #260940 !important;
+}
+.lghrhB{
+  background-color: #DE47BB !important;
+}
+.kxmjqp:disabled{
+
+  background:linear-gradient(to right,#784fe7,#ac55e0);
+  color:#fff !important
+}
+.gfxNFT{
+  background:linear-gradient(to right,#784fe7,#ac55e0)
+}
+.kxmjqp{
+  border:none !important
+}
+.mhgfk{
+  border: 1px solid #371E53 !important;
+}
+.css-1qqnh8x{
+  color:#AB90F7 !important
+}
+.deMLGG{
+  color:#E0A9F8 !important
+}
+input::-webkit-input-placeholder{
+  color:#4B328F !important;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+  color:#4B328F !important;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+  color:#4B328F !important;
+}
+.gfSFvl{
+  color:#BEA7FF !important;
+  background:#200C35 !important 
+  border: 1px solid #4C2171 !important;
+     
+}
+.gfSFvl:hover{
+  border: 1px solid #BEA7FF !important;
+}
+html {
+  color: #CEBFF7 !important;
+  background-color: #2C2F36;
+}
+.dVcZMA{
+  background-color: #4B328F !important;
 }
 `
